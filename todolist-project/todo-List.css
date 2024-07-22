@@ -1,0 +1,122 @@
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 1000px;
+    background-color: rgba(88, 88, 88, 0.58);
+  }
+  h1{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family:ARIAL;
+    font-weight: bold;
+  }
+  #biggerContainer {
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 1000px;
+    background-color: rgb(125, 125, 217);
+    border-radius: 15px;
+    display: flex;
+    ;
+    align-items: center;
+    flex-direction: column;
+   
+  }
+  
+  #input-box {
+    width: 300px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-left: 70px;
+  }
+  #input-box:focus {
+    outline: none;
+    border: 2px solid black;
+    border-radius: 10px;
+
+  }
+  
+  #add-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(9, 255, 0, 0.868);
+  }
+  #add-button:hover {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.868);
+    color: rgba(9, 255, 0, 0.868);
+    transition: 0.3s ease-in-out;
+}
+  
+  
+  li {
+    margin-left: -10px;
+    font-size: 25px;
+    list-style: none;
+    margin-bottom: 10px;
+    width: 350px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between; /* Added to distribute space */
+    align-items: center;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.178);
+  }
+  
+  input {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(240, 240, 240, 0.422);
+  }
+  
+  .check {
+    width: 30px;
+    height: 20px;
+    background-color: rgba(240, 240, 240, 0.422);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    
+
+  }
+  
+  li:hover {
+    background-color: rgba(33, 32, 32, 0.119);
+    cursor: pointer;
+  }
+  
+  .delete {
+    width: 35px;
+    height: 25px;
+    background-color: rgba(240, 240, 240, 0.422);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .delete:hover {
+    background-color: rgba(194, 70, 70, 0.9);
+    color: white;
+  }
+  
+  .deleteImg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: none;
+  }
