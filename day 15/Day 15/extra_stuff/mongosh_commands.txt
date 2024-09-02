@@ -1,0 +1,104 @@
+>>> mongosh // enter mongosh shell
+
+>>> show dbs // list out databases
+
+>>> use <database name> // use existing database or create a new one
+
+>>> show collections // show the collections of a db
+
+>>> db.dropDatabase() // delete a database
+
+>>> db // current database
+
+>>> db.users.insertOne({name: "John"}) // insert one object to users collection
+in the current database
+
+>>> db.users.find() // finds everything in users collection in current database
+
+>>> db.users.insertMany({name: "estif}, {proctor: "catrun"}) // insert many
+
+>>> db.users.find().limit(2) // return only 2 things
+
+>>> db.users.find().sort( { <keys>: <1/-1>} ) // sort results increasing or decreasing
+
+>>> db.users.find().skip(1) // skip one 
+
+>>> db.users.find( { <querys>: <value> }) // find if has value
+
+>>> db.users.find( { name: "estif }, { name: 1, age: 1, _id: 0}) // return the name 
+and the age of the use with name "estif" don't give me the _id
+
+>>> db.users.find( {name: "estif" }, {age: 0}) // get everything except age for
+the user with name == "estif"
+
+>>> db.users.find( {name: { $eq: "estif" } } ) // find the user with the name
+equal to "estif" {complex query}
+
+>>> db.users.find( {name: { $ne: "estif }}) // find the user with the name 
+differenct from the "estif"
+
+>>> $gt // greater than
+
+>>> $gte // greater than or equalto
+
+>>> $lt // less than
+
+>>> $lte // less than or equalto
+
+>>> $in: [value1, value2, value2] // if the value is in the list return
+
+>>> $nin: [value1, value2, value2] // if the value is not in the list return
+
+>>> $exists: boolean // does the key exist "true" does the key not exist "false"
+
+>>> $size: Number // check the size of an array
+
+>>> db.users.find( {age: {<list of complex queries as key value pairs>}} ) // 
+combining queries
+
+>>> db.users.find( {age: {<queries>, name: {<queries>}} // age and name
+
+>>> db.users.find( {$and: [ {age: {<queries>}}, {name: {<queries>}}] }) // age and
+name
+
+>>> db.users.find({$or: [{age: 23}, {name: "estif"}]}) // age or name
+
+>>> db.users.find({age: {$not {$lt: 12}}}) // not age < 12
+
+>>> db.uers.find({$expr: {$gt: ["$debut", "$profit"]}}) // document with debut >
+profit
+
+>>> db.uers.find({"address.street": "main street"}) // find the user with 
+address.street = " main street "
+
+>>> db.users.findOne( {<query>} ) // find one thing that passes the query
+
+>>> db.users.countDocuments( {<query>} ) // count the number of documents
+that match the query
+
+>>> db.uers.updateOne({<query>}, {$set: {<newdata key value>}}) // set the data 
+of the document which matches query to newdata
+
+>>> db.users.updateOne({<query>}, {$inc: {age: 5}}) // increament age by 5
+
+>>> {$rename: {name: "firstname"}} // rename the name to property to firstname
+
+>>> {$unset: {age: ""}} // remove the age property of a document
+
+>>> {$push: {hobbies: "value3"}} // add value3 hobbie to document hobbies list
+create the field otherwise
+
+>>> {$pull: {hobbies: "value2"}} // remove value2 from hobbies in document
+
+>>> db.users.updageMany({<querys>}, {<update value>}) // update many
+
+>>> db.users.updateMany({address: {$exists: true}}, {$unset: {address: ""}}) // 
+remove address for all that have the address field
+
+>>> db.users.replaceOne({<querys>}, {<new_object_data>}) // find and replaceone
+
+>>> db.users.deleteOne({<querys>}) // delete one that matches
+
+>>> db.users.deleteMany({<querys>}) // delete all that match
+
+>>> exit // exit out of mongosh

@@ -1,0 +1,12 @@
+Starting up:
+	- https://www.youtube.com/watch?v=ExcRbA7fy_A&list=PL4cUxeGkcC9h77dJ-QJlwGlZlTd4ecZOA
+	- https://www.youtube.com/watch?v=_hx3ZEVgvh4&list=PLWkguCWKqN9OumKjTAzbpsFFBBeem23xQ
+	- https://www.youtube.com/watch?v=p5BmYfN_a7w
+Aggregation:
+	- https://www.youtube.com/watch?v=A3jvoE0jGdE&list=PLWkguCWKqN9OwcbdYm4nUIXnA2IoXX0LI&index=1
+Indexing:
+	- https://www.youtube.com/watch?v=EtL_DSeWW8Y&list=PLWkguCWKqN9Pokkb0tDgwYxo2vNuc8iFT
+	- https://www.youtube.com/watch?v=D14wWW9EEx8
+Tools:
+	- Studio3t: https://studio3t.com/download/
+	- Load persons.json: https://www.youtube.com/watch?v=s44QWegr2l8&list=PLWkguCWKqN9OwcbdYm4nUIXnA2IoXX0LI&index=2

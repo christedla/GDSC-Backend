@@ -1,0 +1,5 @@
+$first: Gets the first value encountered
+$last: Gets the last value encountered
+$addToSet: Creates an array of unique values
+$push: Creates an array of all values
+$avg, $sum, $min, $max: Performs calculations on numerical values
